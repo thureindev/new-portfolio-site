@@ -1,8 +1,12 @@
-import React from 'react'
+import ProfileContent from './components/ProfileContent';
+import RecentProjectsContent from './components/RecentProjectsContent';
 
-const Home = () => {
+const Home = ({ items, isDarkMode }) => {
   return (
-    <div>Home</div>
+    <div className='bg-neutral-50 dark:bg-neutral-800 text-stone-900 dark:text-stone-100'>
+        <ProfileContent />
+        <RecentProjectsContent items={items} isDarkMode={isDarkMode} />
+    </div>
   )
 }
 
