@@ -48,7 +48,7 @@ const ProfileContent = () => {
                             className="dark:text-stone-900">
                                 polish my programming skills to work as a web developer.
                             </RoughNotation>
-                            I started learning CS50, back to basic, and then I learned HTML, CSS, JavaScript, React, and Node.js. And moving on to Frameworks and Libraries like Next.js, Tailwind CSS, and Express.js. And of course, Git and Docker for deployment. Over a year,
+                            &nbsp;I started learning CS50, back to basic, and then I learned HTML, CSS, JavaScript, React, and Node.js. And moving on to Frameworks and Libraries like Next.js, Tailwind CSS, and Express.js. And of course, Git and Docker for deployment. Over a year,
                             I&apos;ve been learning the fundamental skills of front-end and back-end development.
                             Now I&apos;m looking for a&nbsp;
 

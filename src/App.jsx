@@ -46,7 +46,7 @@ function App() {
     }, {
         id: 2,
         title: "Nandar Blender",
-        short: "Portfolio site for my artist client. Beautiful material UI simple chess clock.",
+        short: "Portfolio site for my artist client.",
         fullImg: girlPortraitImg,
         bgImg: girlPortraitImgBg,
         cutoutImg: girlPortraitImgCutout,
