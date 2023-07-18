@@ -75,7 +75,21 @@ const ProfileContent = () => {
                             )} />
 
                         <ProfileSocialLink text={"View CV"} href={cvFile} isTargetBlank={true}
-                            icon={false} />
+                            icon={false}
+                            useAnchorTag={true}
+                        />
+
+                            
+                    {/* <a 
+                    to={cvFile} 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className='flex flex-row items-center justify-center font-bold' 
+                    aria-current="View CV"
+                    >
+                        View CV
+                    </a> */}
+
                     </div>
 
                 </main>
