@@ -9,10 +9,10 @@ function joinClassNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-function setActiveNav(nav, setNav, id) {
-    // return nav.map((item) => (item.id === id)? {...item, current: true} : {...item, current: false});
-    return setNav(nav.map((item) => (item.id === id) ? { ...item, current: true } : { ...item, current: false }));
-}
+// function setActiveNav(nav, setNav, id) {
+//     // return nav.map((item) => (item.id === id)? {...item, current: true} : {...item, current: false});
+//     return setNav(nav.map((item) => (item.id === id) ? { ...item, current: true } : { ...item, current: false }));
+// }
 
 const SideNav = ({ navigation, setNavigation, current_nav, open, setOpen, isDarkMode, setIsDarkMode }) => {
     return (
