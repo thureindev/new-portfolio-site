@@ -31,7 +31,7 @@ const ProfileContent = () => {
                             I worked office jobs and&nbsp;
 
                             <RoughNotation type="box" color="#7CB9E8" order="4" multiline={true}>
-                                taught basic programming to teenagers.
+                                taught basic programming to college students.
                             </RoughNotation>
 
                             &nbsp;Through my&nbsp;
