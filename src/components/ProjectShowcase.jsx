@@ -25,7 +25,7 @@ function ProjectShowcase( { items, isDarkMode }) {
 
                         <div className="content">
                             <h2>{item.title}</h2>
-                            <p>{item.border}</p>
+                            <p>{item.short}</p>
                         </div>
                     </>
                 </Card3D>
