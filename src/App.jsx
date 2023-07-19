@@ -17,6 +17,8 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer';
 
 
+import blackBg from "./assets/black-bg.jpg";
+
 import mobileScreenImg from "./assets/mobile-screen.jpg";
 import mobileScreenImgCutout from "./assets/mobile-screen-cutout.png"
 import mobileScreenImgBg from "./assets/mobile-screen-bg.jpg"
@@ -28,6 +30,12 @@ import chessPiecesImgBg from "./assets/chess-pieces-bg.png"
 import girlPortraitImg from "./assets/girl-portrait.png";
 import girlPortraitImgCutout from "./assets/girl-portrait-cutout.png"
 import girlPortraitImgBg from "./assets/girl-portrait-bg.png"
+
+import snakeGameImg from "./assets/snake-game.jpg";
+import snakeGameImgCutout from "./assets/snake-game-cutout.png";
+
+import pythonCalcuImg from './assets/python-calcu.jpg';
+import pythonCalcuImgCutout from './assets/python-calcu-cutout.png';
 
 
 function App() {
@@ -71,6 +79,24 @@ function App() {
         cutoutImg: chessPiecesImgCutout,
         border: "border-right-behind border-left-behind",
         href: "https://thureindev.github.io/chess-clock"
+    },{
+        id: 4,
+        title: "Python Calculator",
+        short: "Console Calculator in Python.",
+        fullImg: pythonCalcuImg,
+        bgImg: blackBg,
+        cutoutImg: pythonCalcuImgCutout,
+        border: "border-right-behind border-left-behind",
+        href: "https://github.com/thureindev/python-calcu"
+    },{
+        id: 5,
+        title: "Snake Game in Python",
+        short: "Classic Snake Game Using Tkinter, turtle.",
+        fullImg: snakeGameImg,
+        bgImg: blackBg,
+        cutoutImg: snakeGameImgCutout,
+        border: "border-right-behind border-left-behind border-top-behind border-bottom-behind",
+        href: "https://github.com/thureindev/snake-game-python"
     },
     ]
 
@@ -99,14 +125,14 @@ function App() {
                 <Route path="/" 
                     element={
                     <Home 
-                        items={items} 
+                        items={items.slice(0, 3)} 
                         isDarkMode={isDarkMode} 
                     />}
                 />
                 <Route path="/projects" 
                     element={
                     <Projects 
-                        items={items}
+                        items={items.reverse()}
                         isDarkMode={isDarkMode} 
                     />} 
                 />

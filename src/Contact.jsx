@@ -20,7 +20,7 @@ const Contact = ( { isDarkMode }) => {
                 <div className=''>
 
                     <h2 className='my-8 mx-4 text-lg filter-none'>
-                        Contact Me:
+                        Contact
                     </h2>
                     <section className='mx-4'>
                         <p className='flex items-center justify-start space-x-4 mb-4 text-teal-600 dark:text-teal-200 filter-none'>
