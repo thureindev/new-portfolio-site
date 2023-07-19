@@ -18,6 +18,7 @@ import Footer from './components/Footer';
 
 
 import blackBg from "./assets/black-bg.jpg";
+import darkSlateBlueBg from "./assets/dark-slate-blue-bg.jpg";
 
 import mobileScreenImg from "./assets/mobile-screen.jpg";
 import mobileScreenImgCutout from "./assets/mobile-screen-cutout.png"
@@ -84,7 +85,7 @@ function App() {
         title: "Python Calculator",
         short: "Console Calculator in Python.",
         fullImg: pythonCalcuImg,
-        bgImg: blackBg,
+        bgImg: darkSlateBlueBg,
         cutoutImg: pythonCalcuImgCutout,
         border: "border-right-behind border-left-behind",
         href: "https://github.com/thureindev/python-calcu"
