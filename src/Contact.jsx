@@ -108,10 +108,10 @@ const Contact = ( { isDarkMode }) => {
                     <h2 className='my-8 mx-4 text-lg filter-none'>
                         Profile
                     </h2>
-                    <p className='mb-4 mx-4 text-base '>
-                        I love building tools that are useful to people. Also love planning fun
-                        games and projects. I have strong knowledge and practice in the skills I
-                        claim to have. Team player with an eye for detail. I am eager to learn new tech.
+                    <p className='mb-4 mx-4 text-base '>I love building tools that are useful to people. 
+                    Also love planning fun games and projects. I have strong knowledge and practice in the skills I claim to have. 
+                    I may be new in the web dev industry. 
+                    But I am an enthusiastic learner, teacher. Team player with an eye for detail.
                     </p>
                 </section>
             </div>
