@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import './style.css';
@@ -21,11 +21,12 @@ const Card3D = ({ children, borderClasses, isDarkMode, href }) => {
     card.style.setProperty("--blurOrNone", "blur(2rem) saturate(0.9)");
     isDarkMode && card.style.setProperty("--blurOrNone", "blur(20rem) saturate(0)");
   };
+
+  const [currentX, setCurrentX] = useState(0);
+  const [currentY, setCurrentY] = useState(0);
   
   useEffect(() => {
     const card = cardRef.current;
-    let currentX = 0;
-    let currentY = 0;
 
     const handleMouseMove = (event) => {
         const rect = card.getBoundingClientRect();
@@ -38,33 +39,38 @@ const Card3D = ({ children, borderClasses, isDarkMode, href }) => {
         const x = remap(posX, rect.width / 2, angle);
         const y = remap(posY, rect.height / 2, angle);
 
-        currentX = x;
-        currentY = -y;
+        setCurrentX(x);
+        setCurrentY(y);
     };
 
     const handleMouseOut = (event) => {
-        currentX = 0;
-        currentY = 0;
-    };
-
-    const update = () => {
-        card.style.setProperty("--rotateY", currentX + "deg");
-        card.style.setProperty("--rotateX", currentY + "deg");
+        setCurrentX(0);
+        setCurrentY(0);
     };
 
     card.addEventListener("mousemove", handleMouseMove);
     card.addEventListener("mouseout", handleMouseOut);
 
-    const intervalId = setInterval(update, 1000 / 60);
-
     removeShadowInDarkMode(card);
 
+    // const intervalId = setInterval(update, 1000 / 60);
     return () => {
       card.removeEventListener("mousemove", handleMouseMove);
       card.removeEventListener("mouseout", handleMouseOut);
-      clearInterval(intervalId);
+    //   clearInterval(intervalId);
     };
   }, []);
+
+  useEffect(() => {
+    const card = cardRef.current;
+    
+    const update = () => {
+        card.style.setProperty("--rotateY", currentX + "deg");
+        card.style.setProperty("--rotateX", currentY + "deg");
+    };
+
+    update();
+  }, [currentX, currentY]);
 
 
   useEffect(() => {
