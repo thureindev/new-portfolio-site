@@ -18,47 +18,50 @@ const ProfileContent = () => {
 
                     <RoughNotationGroup show={true}>
                         <h1 className="mb-6 lg:text-2xl font-bold text-left">
-                            Hello! I&apos;m ThuRein, a&nbsp;
+                            Hello! I&apos;m ThuRein, &nbsp;
 
                             <RoughNotation type="highlight" color="#D8BFD8" order="1" multiline={true}
-                            className="dark:text-stone-900">
-                                web frontend developer.
+                                className="dark:text-stone-900">
+                                a web developer
                             </RoughNotation>
-                            &nbsp;Based in Bangkok.
+                            ,&nbsp;based in Bangkok
                         </h1>
-                        <p className="mb-4">
-                            I love building tools that are useful to people. Also love planning fun games and projects. I studied computing and business management in college. After graduation,
-                            I worked office jobs and&nbsp;
-
-                            <RoughNotation type="box" color="#7CB9E8" order="4" multiline={true}>
-                                taught basic programming to college students.
-                            </RoughNotation>
-
-                            &nbsp;Through my&nbsp;
-                            <RoughNotation type="highlight" color="#7CB9E8" order="5" multiline={true}
-                            className="dark:text-stone-900">
-                                teaching experience
-                            </RoughNotation>
-
-                            , I realized I still have a lot to learn. Teaching pushed me to study more.
+                        <p className="mb-4 indent-8">
+                            An enthusiastic builder, learner, and teacher, My strong foundation in
+                            computing and business management complements my hands-on
+                            experience in web development and teaching. I pride myself on my
+                            unyielding drive to expand my knowledge base.
                         </p>
-                        <p className="mb-4">
-                            In 2022, I decided to&nbsp;
-                            <RoughNotation type="highlight" color="#D8BFD8" order="3" multiline={true}
-                            className="dark:text-stone-900">
-                                polish my programming skills to work as a web developer.
-                            </RoughNotation>
-                            &nbsp;I started learning CS50, back to basic, and then I learned HTML, CSS, JavaScript, React, and Node.js. And moving on to Frameworks and Libraries like Next.js, Tailwind CSS, and Express.js. And of course, Git and Docker for deployment. Over a year,
-                            I&apos;ve been learning the fundamental skills of front-end and back-end development.
-                            Now I&apos;m looking for a&nbsp;
-
-                            <RoughNotation type="underline" color="#FF033E" order="6" multiline={true}>
-                                web frontend job.
+                        <p className="mb-4 indent-8">
+                            Today, I stand as
+                            &nbsp;
+                            <RoughNotation type="highlight" color="#D8BFD8" order="2" multiline={true}
+                                className="dark:text-stone-900 font-bold">
+                                a web developer who never stops learning and exploring.
                             </RoughNotation>
                             &nbsp;
-                            <RoughNotation type="circle" color="#FF033E" order="7" multiline={true}>
-                                Hire me?
+                            My pursuits extend to AI, distributed applications, and an interest in game development. Though I may not actively be pursuing game development at the moment, it&apos;s a testament to my love for innovation, continuous growth, and sharing my knowledge with others.
+
+                            With a solid combination of
+
+
+                            &nbsp;<RoughNotation type="underline" color="#37B9F2" order="3" multiline={true}
+                                className="italic">
+                                hands-on experience
                             </RoughNotation>
+                            ,
+                            &nbsp;<RoughNotation type="underline" color="#37B9F2" order="4" multiline={true}
+                                className="italic">
+                                continuous learning
+                            </RoughNotation>
+                            , and
+                            &nbsp;<RoughNotation type="underline" color="#37B9F2" order="5" multiline={true}
+                                className="italic">
+                                a love for teaching
+                            </RoughNotation>&nbsp;
+
+                            I am ready to contribute, innovate, and grow in a challenging and rewarding environment.
+
                         </p>
                     </RoughNotationGroup>
 
@@ -79,8 +82,8 @@ const ProfileContent = () => {
                             useAnchorTag={true}
                         />
 
-                            
-                    {/* <a 
+
+                        {/* <a 
                     to={cvFile} 
                     target="_blank"
                     rel="noopener noreferrer"
