@@ -30,33 +30,33 @@ I'm a Web Developer specializing in MERN stack, with a knack for Python and PHP.
 
 ## My Skills
 - **Languages**: <br>
-  <img src="./images/javascript.jpg" alt="JavaScript" height="50" /> 
-  <img src="./images/typescript.jpg" alt="TypeScript" height="50" /> 
-  <img src="./images/python.jpg" alt="Python" height="50" /> 
-  <img src="./images/php.jpg" alt="PHP" height="50" />
+  <img src="https://raw.githubusercontent.com/thureindev/thureindev/main/images/javascript.jpg" alt="JavaScript" height="50" /> 
+  <img src="https://raw.githubusercontent.com/thureindev/thureindev/main/images/typescript.jpg" alt="TypeScript" height="50" /> 
+  <img src="https://raw.githubusercontent.com/thureindev/thureindev/main/images/python.jpg" alt="Python" height="50" /> 
+  <img src="https://raw.githubusercontent.com/thureindev/thureindev/main/images/php.jpg" alt="PHP" height="50" />
 - **Web Development**: <br>
-  <img src="./images/nodejs.jpg" alt="NodeJS" height="50" /> 
-  <img src="./images/react.jpg" alt="React" height="50" /> 
-  <img src="./images/vite.jpg" alt="Vite" height="50" /> 
-  <img src="./images/expressjs.jpg" alt="ExpressJS" height="50" /> 
-  <img src="./images/flask.jpg" alt="Flask" height="50" /> 
-  <img src="./images/jekyll.jpg" alt="Jekyll" height="50" /> 
+  <img src="https://raw.githubusercontent.com/thureindev/thureindev/main/images/nodejs.jpg" alt="NodeJS" height="50" /> 
+  <img src="https://raw.githubusercontent.com/thureindev/thureindev/main/images/react.jpg" alt="React" height="50" /> 
+  <img src="https://raw.githubusercontent.com/thureindev/thureindev/main/images/vite.jpg" alt="Vite" height="50" /> 
+  <img src="https://raw.githubusercontent.com/thureindev/thureindev/main/images/expressjs.jpg" alt="ExpressJS" height="50" /> 
+  <img src="https://raw.githubusercontent.com/thureindev/thureindev/main/images/flask.jpg" alt="Flask" height="50" /> 
+  <img src="https://raw.githubusercontent.com/thureindev/thureindev/main/images/jekyll.jpg" alt="Jekyll" height="50" /> 
 - **Frontend**: <br>
-  <img src="./images/sass.jpg" alt="SASS" height="50" /> 
-  <img src="./images/bootstrap.jpg" alt="Bootstrap" height="50" /> 
-  <img src="./images/tailwind.jpg" alt="Tailwind" height="50" /> 
-  <img src="./images/materializecss.jpg" alt="Materialize CSS" height="50" />
-  <img src="./images/html5.jpg" alt="HTML5" height="50" /> 
-  <img src="./images/css3.jpg" alt="CSS3" height="50" />
+  <img src="https://raw.githubusercontent.com/thureindev/thureindev/main/images/sass.jpg" alt="SASS" height="50" /> 
+  <img src="https://raw.githubusercontent.com/thureindev/thureindev/main/images/bootstrap.jpg" alt="Bootstrap" height="50" /> 
+  <img src="https://raw.githubusercontent.com/thureindev/thureindev/main/images/tailwind.jpg" alt="Tailwind" height="50" /> 
+  <img src="https://raw.githubusercontent.com/thureindev/thureindev/main/images/materializecss.jpg" alt="Materialize CSS" height="50" />
+  <img src="https://raw.githubusercontent.com/thureindev/thureindev/main/images/html5.jpg" alt="HTML5" height="50" /> 
+  <img src="https://raw.githubusercontent.com/thureindev/thureindev/main/images/css3.jpg" alt="CSS3" height="50" />
 - **Databases**: <br>
-  <img src="./images/mongodb.jpg" alt="MongoDB" height="50" /> 
-  <img src="./images/mysql.jpg" alt="MySQL" height="50" /> 
-  <img src="./images/postgresql.jpg" alt="PostgreSQL" height="50" />
+  <img src="https://raw.githubusercontent.com/thureindev/thureindev/main/images/mongodb.jpg" alt="MongoDB" height="50" /> 
+  <img src="https://raw.githubusercontent.com/thureindev/thureindev/main/images/mysql.jpg" alt="MySQL" height="50" /> 
+  <img src="https://raw.githubusercontent.com/thureindev/thureindev/main/images/postgresql.jpg" alt="PostgreSQL" height="50" />
 - **Tools**: <br>
-  <img src="./images/git.jpg" alt="Git" height="50" /> 
-  <img src="./images/docker.jpg" alt="Docker" height="50" /> 
-  <img src="./images/jenkins.jpg" alt="Jenkins" height="50" />
-  <img src="./images/kubernetes.jpg" alt="Kubernetes" height="50" />
+  <img src="https://raw.githubusercontent.com/thureindev/thureindev/main/images/git.jpg" alt="Git" height="50" /> 
+  <img src="https://raw.githubusercontent.com/thureindev/thureindev/main/images/docker.jpg" alt="Docker" height="50" /> 
+  <img src="https://raw.githubusercontent.com/thureindev/thureindev/main/images/jenkins.jpg" alt="Jenkins" height="50" />
+  <img src="https://raw.githubusercontent.com/thureindev/thureindev/main/images/kubernetes.jpg" alt="Kubernetes" height="50" />
 
 ## Recent Projects
 - **Tipsy Tavern**: Open your fridge and make a cocktail [https://thureindev.github.io/tipsy-tavern](#)
