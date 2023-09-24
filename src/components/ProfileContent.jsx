@@ -1,11 +1,12 @@
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
-import ProfileSocialLink from "./ProfileSocialLink";
-
 import { FaLinkedinIn } from 'react-icons/fa';
 import { FiGithub } from 'react-icons/fi';
 
 import avatar from "../assets/avatar.jpg";
 import cvFile from "../assets/THUREIN_TUN_CV.pdf";
+
+import ProfileSocialLink from "./ProfileSocialLink";
+import SkillsDisplay from "./SkillsDisplay";
 
 
 const ProfileContent = () => {
@@ -14,6 +15,7 @@ const ProfileContent = () => {
         <>
 
             <div className="flex flex-col-reverse lg:flex-row items-center justify-center">
+
                 <main className="max-w-2xl lg:mt-20 flex flex-col items-start justify-center flex-1 pl-8 pr-8 md:px-20 text-base text-justify">
 
                     <RoughNotationGroup show={true}>
@@ -29,9 +31,36 @@ const ProfileContent = () => {
                         <p className="mb-4 indent-8">
                             An enthusiastic builder, learner, and teacher, My strong foundation in
                             computing and business management complements my hands-on
-                            experience in web development and teaching. I pride myself on my
-                            unyielding drive to expand my knowledge base.
+                            experience in web development and teaching.
                         </p>
+
+                        <p className="mb-4 indent-8">                            
+                            I specialize in building 
+                            &nbsp;<RoughNotation type="underline" color="#37B9F2" order="3" multiline={true}
+                                className="italic">
+                                web solutions using the MERN stack.
+                            </RoughNotation>
+                            &nbsp;
+                            My background with 
+                            
+                            &nbsp;<RoughNotation type="circle" color="#37B9F2" order="4" multiline={true}
+                                className="italic">
+                                PHP
+                            </RoughNotation>
+                            &nbsp;
+                            has equipped me to understand and
+                            adapt to diverse coding environments, My proficiency extends
+                            to 
+                            &nbsp;<RoughNotation type="circle" color="#37B9F2" order="5" multiline={true}
+                                className="italic">
+                                Python, 
+                            </RoughNotation>
+                            &nbsp;
+                            
+                            particularly for data manipulation and automation.
+                            
+                        </p>
+
                         <p className="mb-4 indent-8">
                             Today, I stand as
                             &nbsp;
@@ -40,28 +69,9 @@ const ProfileContent = () => {
                                 a web developer who never stops learning and exploring.
                             </RoughNotation>
                             &nbsp;
-                            My pursuits extend to AI, distributed applications, and an interest in game development. Though I may not actively be pursuing game development at the moment, it&apos;s a testament to my love for innovation, continuous growth, and sharing my knowledge with others.
 
-                            With a solid combination of
-
-
-                            &nbsp;<RoughNotation type="underline" color="#37B9F2" order="3" multiline={true}
-                                className="italic">
-                                hands-on experience
-                            </RoughNotation>
-                            ,
-                            &nbsp;<RoughNotation type="underline" color="#37B9F2" order="4" multiline={true}
-                                className="italic">
-                                continuous learning
-                            </RoughNotation>
-                            , and
-                            &nbsp;<RoughNotation type="underline" color="#37B9F2" order="5" multiline={true}
-                                className="italic">
-                                a love for teaching
-                            </RoughNotation>&nbsp;
-
-                            I am ready to contribute, innovate, and grow in a challenging and rewarding environment.
-
+                            With a solid combination of hands-on experience, continuous learning, and a love for teaching.
+                            
                         </p>
                     </RoughNotationGroup>
 
@@ -82,17 +92,6 @@ const ProfileContent = () => {
                             useAnchorTag={true}
                         />
 
-
-                        {/* <a 
-                    to={cvFile} 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className='flex flex-row items-center justify-center font-bold' 
-                    aria-current="View CV"
-                    >
-                        View CV
-                    </a> */}
-
                     </div>
 
                 </main>
@@ -101,6 +100,12 @@ const ProfileContent = () => {
                     src={avatar} alt="avatar"
                     className="lg:mb-0 mb-4 mt-5 rounded-full w-20 h-20 lg:w-60 lg:h-60 object-cover shadow-lg"
                 />
+            </div>
+
+            <div className="flex items-center justify-center pl-8 pr-8 ">
+                <div className="max-w-2xl">
+                    <SkillsDisplay />
+                </div>
             </div>
         </>
     )

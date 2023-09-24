@@ -66,7 +66,7 @@ const Card3D = ({ children, borderClasses, isDarkMode, href }) => {
     
     const update = () => {
         card.style.setProperty("--rotateY", currentX + "deg");
-        card.style.setProperty("--rotateX", currentY + "deg");
+        card.style.setProperty("--rotateX", -currentY + "deg");
     };
 
     update();

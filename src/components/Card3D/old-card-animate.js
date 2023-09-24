@@ -10,7 +10,7 @@ const remap = (value, oldMax, newMax) => {
 	return Math.min(Math.max(newValue, -newMax), newMax);
 };
 
-window.addEventListener("DOMContentLoaded", (event) => {
+rotateCard.addEventListener("DOMContentLoaded", (event) => {
 	const cards = document.querySelectorAll(".card");
 	cards.forEach((e) => {		
 		e.addEventListener("mousemove", (event) => {
@@ -41,6 +41,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
 			const y = lerp(currentY, e.dataset.rotateY, 0.05);
 			e.style.setProperty("--rotateY", x + "deg");
 			e.style.setProperty("--rotateX", y + "deg");
+            console.log(x);
+            console.log(y);
 		})
 	}
 	setInterval (update,1000/60)
