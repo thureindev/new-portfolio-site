@@ -15,8 +15,9 @@ import Footer from './components/Footer';
 
 
 function App() {
-    const [isSideNavOpen, setIsSideNavOpen] = useState(false)
-    const [isDarkMode, setIsDarkMode] = useState(localStorage.getItem('theme') === 'dark')
+    const [isSideNavOpen, setIsSideNavOpen] = useState(false);
+    // const [isDarkMode, setIsDarkMode] = useState(localStorage.getItem('theme') === 'dark')
+    const [isDarkMode, setIsDarkMode] = useState(true);
 
     // This useEffect hook will run once when the component mounts
     useEffect(() => {
