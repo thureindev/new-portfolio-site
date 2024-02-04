@@ -4,13 +4,11 @@ import RecentProjectsContent from './components/RecentProjectsContent';
 const Home = ({ items, isDarkMode }) => {
   return (
     <div className='bg-neutral-50 dark:bg-neutral-800 text-stone-900 dark:text-stone-100'>
+      <ProfileContent />
 
-        <ProfileContent />
-
-        <RecentProjectsContent items={items} isDarkMode={isDarkMode} />
-
+      <RecentProjectsContent items={items} isDarkMode={isDarkMode} />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

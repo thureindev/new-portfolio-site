@@ -12,22 +12,25 @@ import items from './data';
 function App() {
   const [isSideNavOpen, setIsSideNavOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(
+    // set dark mode as default
     !localStorage.getItem('theme') || localStorage.getItem('theme') === 'dark'
   );
 
-  console.log(localStorage.getItem('theme'));
-  console.log('isDarkMode: ', isDarkMode);
-
-  // This useEffect hook will run once when the component mounts
-  useEffect(() => {
+  // update document theme
+  const updateDocTheme = () => {
     if (
       isDarkMode ||
-      window.matchMedia('(prefers-color-scheme: dark)').matches
+      (!('theme' in localStorage) &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches)
     ) {
       document.documentElement.classList.add('dark');
     } else {
       document.documentElement.classList.remove('dark');
     }
+  };
+
+  useEffect(() => {
+    updateDocTheme();
   }, [isDarkMode]);
 
   // Get the current location
