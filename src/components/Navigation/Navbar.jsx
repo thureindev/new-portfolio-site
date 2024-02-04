@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 import SideNav from './SideNav';
@@ -10,54 +11,54 @@ function joinClassNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-const Navbar = ({
-  location_path,
-  open,
-  setOpen,
-  isDarkMode,
-  setIsDarkMode,
-}) => {
+const Navbar = () => {
+  // Get the current location
+  const location = useLocation();
+  // console.log(location.pathname);
+
+  const [isSideNavOpen, setIsSideNavOpen] = useState(false);
   const [navigation, setNavigation] = useState([
     {
       id: 1,
-      name: 'Home',
-      href: '/',
-      isActive: location_path === '/' ? true : false,
+      name: 'Explore',
+      href: '/projects',
+      isActive: location.pathname === '/projects' ? true : false,
     },
     {
       id: 2,
-      name: 'Projects',
-      href: '/projects',
-      isActive: location_path === '/projects' ? true : false,
+      name: 'About me',
+      href: '/',
+      isActive: location.pathname === '/' ? true : false,
     },
     {
       id: 3,
-      name: 'Contact',
+      name: 'Get in touch',
       href: '/contact',
-      isActive: location_path === '/contact' ? true : false,
+      isActive: location.pathname === '/contact' ? true : false,
     },
   ]);
 
   useEffect(() => {
     setNavigation(
       navigation.map((item) =>
-        item.href === location_path
+        item.href === location.pathname
           ? { ...item, isActive: true }
           : { ...item, isActive: false }
       )
     );
-  }, [location_path]);
+  }, [location]);
 
+  // location_path={location.pathname} // Pass the current path as a prop
+
+  useEffect(() => {
+    setIsSideNavOpen(false); // Close the navigation when the location changes
+  }, [location]);
   return (
     <>
       <SideNav
         navigation={navigation}
-        setNavigation={setNavigation}
-        location_path={location_path}
-        open={open}
-        setOpen={setOpen}
-        isDarkMode={isDarkMode}
-        setIsDarkMode={setIsDarkMode}
+        isOpen={isSideNavOpen}
+        setIsOpen={setIsSideNavOpen}
       />
 
       <nav
@@ -74,11 +75,11 @@ const Navbar = ({
             aria-controls='navbarSupportedContent2'
             aria-expanded='false'
             aria-label='Toggle navigation'
-            onClick={() => setOpen(!open)}
+            onClick={() => setIsSideNavOpen(!isSideNavOpen)}
           >
             {/* ----- -----  Hamburger icon ----- ----- ----- ----- */}
 
-            {open ? (
+            {isSideNavOpen ? (
               <XMarkIcon className='h-8 w-8' aria-hidden='true' />
             ) : (
               <Bars3Icon className='h-8 w-8' aria-hidden='true' />
@@ -87,7 +88,7 @@ const Navbar = ({
 
           <div
             className='hidden lg:inline-block ml-2'
-            onClick={() => setOpen(!open)}
+            onClick={() => setIsSideNavOpen(!isSideNavOpen)}
           >
             <a
               className='text-xl text-neutral-800 dark:text-neutral-200'
@@ -146,15 +147,6 @@ const Navbar = ({
                   </li>
                 ))
               }
-              {/* ----- -----  Disabled link ----- ----- ----- ----- */}
-              {/* <li
-                                className="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1"
-                                data-te-nav-link-ref>
-                                <a
-                                    className="text-black/60 dark:text-white/60 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-                                >thureindev@outlook.com</a>
-
-                            </li> */}
             </ul>
           </div>
         </div>

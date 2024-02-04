@@ -77,7 +77,7 @@ const ProfileContent = () => {
                 multiline={true}
                 className='dark:text-stone-900 font-bold'
               >
-                a web developer who never stops learning and exploring.
+                a web developer who never stop learning and exploring.
               </RoughNotation>
               &nbsp; With a solid combination of hands-on experience, continuous
               learning, and a love for teaching.

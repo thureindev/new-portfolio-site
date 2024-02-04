@@ -2,10 +2,10 @@ import { Fragment } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 
-const Slideover = ({ open, setOpen, header, content }) => {
+const Slideover = ({ isOpen, setIsOpen, header, content }) => {
   return (
-    <Transition.Root show={open} as={Fragment}>
-      <Dialog as='div' className='relative z-10' onClose={setOpen}>
+    <Transition.Root show={isOpen} as={Fragment}>
+      <Dialog as='div' className='relative z-10' onClose={setIsOpen}>
         <Transition.Child
           as={Fragment}
           enter='ease-in-out duration-500'
@@ -73,7 +73,7 @@ const Slideover = ({ open, setOpen, header, content }) => {
                       <button
                         type='button'
                         className='rounded-md text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white'
-                        onClick={() => setOpen(false)}
+                        onClick={() => setIsOpen(false)}
                       >
                         <span className='sr-only'>Close panel</span>
                         <XMarkIcon className='h-6 w-6' aria-hidden='true' />
