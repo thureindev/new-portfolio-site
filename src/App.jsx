@@ -7,7 +7,7 @@ import Home from './Home';
 import Projects from './Projects';
 import Contact from './Contact';
 import items from './data';
-import updateDocTheme from './darkmodelogic';
+import updateDocTheme from './components/DarkModeToggle/updateDocTheme';
 
 function App() {
   useEffect(() => {

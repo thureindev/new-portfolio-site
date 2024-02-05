@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import Slideover from './Slideover';
 import './styles.css';
-
-import DarkModeToggle from '../DarkModeToggle';
+// import DarkModeToggle from '../DarkModeToggle/DarkModeToggle';
+import { DarkModeToggle } from 'lazy-tail';
 
 function joinClassNames(...classes) {
   return classes.filter(Boolean).join(' ');
