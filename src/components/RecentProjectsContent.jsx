@@ -1,4 +1,4 @@
-import Card3D from './Card3D/Card3D';
+import { Card3D } from 'notai';
 
 const RecentProjectsContent = ({ items }) => {
   return (

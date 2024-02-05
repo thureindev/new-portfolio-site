@@ -1,5 +1,5 @@
 {
-  "name": "new-portfolio",
+  "name": "thureindev-portfolio",
   "private": true,
   "version": "0.0.1",
   "type": "module",
@@ -14,7 +14,7 @@
   "dependencies": {
     "@headlessui/react": "^1.7.15",
     "@heroicons/react": "^2.0.18",
-    "lazy-tail": "^1.0.2",
+    "notai": "^1.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-horizontal-scrolling-menu": "^4.1.0",
@@ -32,8 +32,8 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.1",
     "gh-pages": "^5.0.0",
-    "postcss": "^8.4.26",
-    "tailwindcss": "^3.3.3",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1",
     "vite": "^4.4.0"
   }
 }

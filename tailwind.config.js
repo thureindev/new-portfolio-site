@@ -23,7 +23,5 @@ export default {
             textColor: ['dark'], // Enable dark mode variant for text color
         },
     },
-
-    plugins: [require("tw-elements/dist/plugin.cjs")],
 }
 

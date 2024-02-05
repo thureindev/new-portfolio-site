@@ -1,8 +1,8 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import Slideover from './Slideover';
+import DarkModeToggle from '../dark-mode-toggle/DarkModeToggle';
 import './styles.css';
-// import DarkModeToggle from '../DarkModeToggle/DarkModeToggle';
-import { DarkModeToggle } from 'lazy-tail';
 
 function joinClassNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -20,17 +20,21 @@ const SideNav = ({ navigation, isOpen, setIsOpen }) => {
         isOpen={isOpen}
         setIsOpen={setIsOpen}
         header={
-          <div className={`mb-4 ml-4 mr-4`}>
-            <h5
-              className={`mb-2 text-xl font-medium leading-tight filter-none
+          <div
+            className={`mb-4 ml-4 mr-4 flex flex-row justify-between content-start`}
+          >
+            <div>
+              <h5
+                className={`mb-2 text-xl font-medium leading-tight filter-none
                         text-stone-900 dark:text-stone-100`}
-            >
-              thureindev
-            </h5>
+              >
+                thureindev
+              </h5>
 
-            <p className='text-neutral-500 dark:text-neutral-400 filter-none'>
-              Web Developer
-            </p>
+              <p className='text-neutral-500 dark:text-neutral-400 filter-none'>
+                Web Developer
+              </p>
+            </div>
 
             <DarkModeToggle />
           </div>

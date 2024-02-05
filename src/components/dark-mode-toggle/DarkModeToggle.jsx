@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { SunIcon, MoonIcon } from '@heroicons/react/24/solid';
 import updateDocTheme from './updateDocTheme';
 
@@ -25,7 +25,7 @@ const DarkModeToggle = () => {
   return (
     <>
       <button
-        className={`fixed z-10 top-4 right-4 inline-block rounded text-xs font-medium uppercase leading-normal transition duration-150 ease-in-out px-6 pb-2 pt-2.5
+        className={`inline-block rounded text-xs font-medium uppercase leading-normal transition duration-150 ease-in-out px-6 pb-2 pt-2.5
             dark:bg-neutral-50 bg-neutral-800
             dark:text-neutral-800 text-neutral-50
             dark:shadow-[0_4px_9px_-4px_#cbcbcb] shadow-[0_4px_9px_-4px_rgba(51,45,45,0.7)]

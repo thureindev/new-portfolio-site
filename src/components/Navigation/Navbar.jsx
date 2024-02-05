@@ -1,11 +1,7 @@
-import { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
-import { Link } from 'react-router-dom';
-
-import SideNav from './SideNav';
-
-// icons
+import React, { useEffect, useState } from 'react';
+import { useLocation, Link } from 'react-router-dom';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
+import SideNav from './SideNav';
 
 function joinClassNames(...classes) {
   return classes.filter(Boolean).join(' ');

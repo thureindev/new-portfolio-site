@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-import Navbar from './components/Navigation/Navbar';
+import Navbar from './components/navigation/Navbar';
 import Footer from './components/Footer';
 import Home from './Home';
 import Projects from './Projects';
 import Contact from './Contact';
 import items from './data';
-import updateDocTheme from './components/DarkModeToggle/updateDocTheme';
+import updateDocTheme from './components/dark-mode-toggle/updateDocTheme';
 
 function App() {
   useEffect(() => {
